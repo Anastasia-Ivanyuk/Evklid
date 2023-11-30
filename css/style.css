@@ -1,0 +1,517 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local("Montserrat-Regular"),
+        url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("../fonts/Montserrat-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local("Montserrat-Light"),
+        url("../fonts/Montserrat-Light.woff2") format("woff2"),
+        url("../fonts/Montserrat-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local("Montserrat-Bold"),
+        url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+        url("../fonts/Montserrat-Bold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1770px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.main {
+    width: 1920px;
+    padding: 0 75px;
+}
+
+.section-title {
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 16px;
+    background: #F90;
+}
+
+/*header*/
+
+.header {
+    width: 1920px;
+    min-height: 100px;
+    padding: 14px 75px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 0px 0px 32px 32px;
+    box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.10);
+}
+
+.header__content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    gap: 12px;
+}
+
+.header__list {
+    gap: 84px;
+}
+
+.header__item {
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+}
+
+/*hero*/
+
+.hero__content {
+    width: 1770px;
+    height: 620px;
+    padding: 100px 80px;
+    margin-bottom: 50px;
+    background-image: url('../img/hero-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 32px;
+}
+
+.hero__title {
+    width: 837px;
+    margin-bottom: 22px;
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    line-height: 1.23;
+}
+
+.hero__desc {
+    width: 790px;
+    margin-bottom: 90px;
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero__button {
+    padding: 25px 39px;
+    font-size: 23px;
+}
+
+/*about-us*/
+
+.about-us {
+    margin-bottom: 100px;
+}
+
+.about-us__title {
+    margin-bottom: 20px;
+}
+
+.about-us__text {
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.about-us__content--top {
+    max-width: 1235px;
+    margin-bottom: 50px;
+}
+
+.about-us__list {
+    max-height: 622px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+
+.about-us__item {
+    width: 870px;
+    height: 295px;
+    border: 1px solid #cacaca;
+    border-radius: 35px;
+}
+
+.about-us__item--big {
+    width: 868px;
+    height: 622px;
+    position: relative;
+    background-image: url('../img/ab-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-us__item--small {
+    padding: 65px 120px 65px 60px;
+    gap: 50px;
+}
+
+.about-us__desc--big {
+    height: 196px;
+    padding: 50px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 35px;
+    background-color: rgba(0, 0, 0, 0.50);
+    align-items: center;
+    gap: 160px;
+}
+
+.about-us__text--big {
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+
+.about-us__btn {
+    width: 175px;
+    height: 60px;
+    padding: 19px 38px;
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 16px;
+    border: 3px solid #F90;
+}
+
+.about-us__title--bot {
+    width: 452px;
+    margin-bottom: 8px;
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/*stages*/
+
+.stages {
+    width: 1772px;
+    height: 646px;
+    margin-bottom: 15px;
+}
+
+.stages__title {
+    margin-bottom: 32px;
+}
+
+.stages__content {
+    gap: 142px;
+    align-items: flex-end;
+}
+
+.stages__heading {
+    margin-bottom: 8px;
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.stages__desc {
+    width: 758px;
+    margin-bottom: 18px;
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.stages__buttons {
+    gap: 32px;
+}
+
+.stages__button {
+    padding: 20px 38px;
+}
+
+.stages__button--white {
+    color: #000;
+    font-size: 16px;
+    border-radius: 16px;
+    border: 1px solid #000;
+}
+
+
+/*questions*/
+
+.questions {
+    margin-bottom: 100px;
+}
+
+.questions__title {
+    margin-bottom: 32px;
+}
+
+.questions__list {
+    width: 1770px;
+    gap: 32px;
+}
+
+.questions__item {
+    width: 559px;
+    width: 100%;
+    height: 292px;
+    padding: 65px 65px 65px 60px;
+    border-radius: 32px;
+    border: 1px solid #CACACA;
+}
+
+.questions__heading {
+    width: 412px;
+    margin-bottom: 8px;
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.questions__desc {
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+/*footer*/
+.footer {
+    width: 1920px;
+}
+
+.footer__content {
+    background-color: #000;
+    padding: 50px 75px;
+}
+
+.footer__list {
+    align-items: center;
+}
+
+.footer__logo {
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-item__list {
+    margin-bottom: 90px;
+}
+
+.footer__item--left {
+    margin-right: 349px;
+}
+
+.footer-item__item {
+    color: #CACACA;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.footer__social {
+    gap: 25px;
+}
+
+.footer__item--centr {
+    margin-right: 236px;
+}
+
+.footer__title {
+    margin-bottom: 25px;
+    color: #CACACA;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-top {
+    flex-direction: column;
+}
+
+.input-top {
+    width: 568px;
+    height: 60px;
+    margin-bottom: 26px;
+    padding: 16px 24px 13px 20px;
+    color: #CACACA;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    background-color: #414141;
+    border-radius: 16px;
+}
+
+.form__textarea {
+    width: 568px;
+    height: 150px;
+    margin-bottom: 32px;
+    padding: 14px 20px 12px 20px;
+    color: #CACACA;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    background-color: #414141;
+    border-radius: 16px;
+}
+
+.form__button {
+    width: 265px;
+    height: 58px;
+    margin-right: 22px;
+    padding: 19px 50px;
+}
+
+.label-checkbox {
+    color: #CACACA;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+/* .input-checkbox input {
+    width: 14px;
+    height: 14px;
+    position: relative;
+    border: 1px solid white;
+}
+
+.input-checkbox input::after {
+    content: "";
+    width: 8px;
+    height: 4px;
+    border-left: 1px solid green;
+    position: absolute;
+    transform: rotate(45deg);
+} */
+
+
+.input-checkbox::before {
+    content: "";
+    appearance: none;
+}
+
+
+.footer__item--right {
+    width: 363px;
+    height: 320px;
+    color: #CACACA;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
