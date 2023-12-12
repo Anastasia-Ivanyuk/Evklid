@@ -156,11 +156,14 @@
                   <input class="input-top" type="email" name="mail" placeholder="Email*" required>
                   <textarea class="form__textarea" name="comment" placeholder="Сообщение"></textarea>
                 </div>
-                <div class="form-bottom">
+                <div class="form-bottom flex">
                   <button class="form__button btn-reset btn" type="submit">Отправить данные</button>
-                  <label class="label-checkbox" for="data">
-                    <input class="input-checkbox" type="checkbox" name="data" id="data" checked>Согласен на обработку данных
-                  </label>
+                  <div class="checkbox">
+                    <label class="custom-checkbox" for="data">
+                      <input class="custom-checkbox___input" type="checkbox" name="data" id="data" checked>
+                      <span class="custom-checkbox__text">Согласен на обработку данных</span>
+                    </label>
+                  </div>
                 </div>
               </form>
             </li>

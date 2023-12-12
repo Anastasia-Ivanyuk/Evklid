@@ -466,14 +466,39 @@ body {
     border-radius: 16px;
 }
 
+.form-bottom {
+    align-items: center;
+}
+
 .form__button {
     width: 265px;
     height: 58px;
-    margin-right: 22px;
+    margin-right: 25px;
     padding: 19px 50px;
 }
 
-.label-checkbox {
+.custom-checkbox {
+    user-select: none;
+    cursor: pointer;
+}
+
+.custom-checkbox___input {
+    position: absolute;
+    appearance: none;
+}
+
+.custom-checkbox___input:checked+.custom-checkbox__text::after {
+    opacity: 1;
+}
+
+.custom-checkbox___input:focus+.custom-checkbox__text {
+    outline: 1px solid #000;
+    outline-offset: 3px;
+}
+
+.custom-checkbox__text {
+    position: relative;
+    padding-left: 16px;
     color: #CACACA;
     font-family: 'Montserrat';
     font-size: 16px;
@@ -482,27 +507,74 @@ body {
     line-height: 32px;
 }
 
-/* .input-checkbox input {
+.custom-checkbox__text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #CACACA;
+    transform: translateY(-50%);
+}
+
+.custom-checkbox__text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
     width: 14px;
     height: 14px;
-    position: relative;
-    border: 1px solid white;
+    background-image: url('../img/Check.svg');
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: opacity 0.3s;
+
 }
 
-.input-checkbox input::after {
-    content: "";
-    width: 8px;
-    height: 4px;
-    border-left: 1px solid green;
-    position: absolute;
-    transform: rotate(45deg);
+/* .label-checkbox {
+    color: #CACACA;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.custom-checkbox {
+    user-select: none;
+    cursor: pointer;
 } */
 
-
-.input-checkbox::before {
-    content: "";
-    appearance: none;
+/* .custom-checkbox+label {
+    position: relative;
+    padding-left: 30px;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    color: #000;
+    cursor: pointer;
+    user-select: none;
 }
+
+.custom-checkbox+label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid #ccc;
+}
+
+.custom-checkbox:checked+label::before {
+    border-color: #CACACA;
+    background-image: url('../img/Check.svg');
+    background-size: contain;
+} */
 
 
 .footer__item--right {
